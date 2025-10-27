@@ -63,7 +63,7 @@ export default function Contact() {
       {/* Contact Form Section */}
       <section className="px-4 sm:px-6 pb-0 sm:pb-0">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-[#c4ff00] rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-16">
+          <div className="bg-[#c4ff00] rounded-2xl sm:rounded-2xl p-6 sm:p-10 md:p-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
               {/* Left Side - Contact Information */}
               <div className="space-y-8">
@@ -82,7 +82,7 @@ export default function Contact() {
                   </h3>
 
                   <div className="space-y-6">
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start space-x-3 sm:space-x-4">
                       <div className="p-3 rounded-full bg-black/10">
                         <Mail className="h-6 w-6 text-black" />
                       </div>
@@ -97,7 +97,7 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start space-x-3 sm:space-x-4">
                       <div className="p-3 rounded-full bg-black/10">
                         <Phone className="h-6 w-6 text-black" />
                       </div>
@@ -112,7 +112,7 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start space-x-3 sm:space-x-4">
                       <div className="p-3 rounded-full bg-black/10">
                         <MapPin className="h-6 w-6 text-black" />
                       </div>
@@ -196,7 +196,7 @@ export default function Contact() {
                       isSubmitting
                         ? 'bg-gray-400 cursor-not-allowed'
                         : 'bg-[#1a1d2e] hover:bg-black'
-                    } text-white`}
+                    } text-[#c4ff00]`}
                   >
                     {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>

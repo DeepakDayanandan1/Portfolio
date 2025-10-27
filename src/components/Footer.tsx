@@ -6,7 +6,7 @@
 export default function Footer() {
   return (
     <footer className="bg-[#1a1d2e] py-12 sm:py-16 px-4 sm:px-6 mt-12 sm:mt-20">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-right justify-between gap-8">
         {/* Logo
         <div className="flex-shrink-0">
           <svg 
@@ -24,17 +24,17 @@ export default function Footer() {
         </div> */}
         
         {/* Tagline */}
-        <div className="text-center md:text-right ml-auto">
+        <div className="text-right md:text-right ml-auto">
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             <span className="text-gray-500">Creating </span>
-            <span className="text-[#c4ff00]">stories</span>
+            <span className="text-[#c4ff00]">stories </span>
           </p>
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             <span className="text-gray-500">one </span>
             <span className="text-[#c4ff00]">frame</span>
             <span className="text-gray-500"> at a time.</span>
           </p>
-          <p className="text-gray-500 text-xs sm:text-sm mt-3 sm:mt-4">Portfolio v2.3 © 2025 Deepak</p>
+          <p className="text-gray-500 text-xs sm:text-xs md:text-sm mt-3 sm:mt-4">Portfolio v2.3 © 2025 Deepak</p>
         </div>
       </div>
     </footer>

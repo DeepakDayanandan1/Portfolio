@@ -89,7 +89,7 @@ export default function Gallery() {
       <section className="px-4 sm:px-6 pb-16 sm:pb-20">
         <div className="max-w-6xl mx-auto">
           <div 
-            className="bg-[#00000] rounded-2xl p-6 sm:p-10 md:p-12"
+            className="bg-black rounded-2xl p-4 sm:p-6 md:p-8 lg:p-10"
             style={{ minHeight: masonryHeight > 0 ? `${masonryHeight}px` : 'auto' }}
           >
             {isLoading ? (

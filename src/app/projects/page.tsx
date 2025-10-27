@@ -14,7 +14,7 @@ export default function Projects() {
       title: 'Portfolio',
       category: 'Frontend',
       description: 'Developed to showcase my expertise in UI/UX design and front-end development, this portfolio highlights my skills in Next.js, TypeScript, and Tailwind CSS through a modern, user-focused interface.',
-      image: 'projectimages/Portfol.png',
+      image: '/projectimages/Portfol.png',
       techs: [
         { name: 'Next.js', icon: '/images/skills/next.png' },
         { name: 'Tailwind CSS', icon: '/images/skills/tailwind.png' },
@@ -30,7 +30,7 @@ export default function Projects() {
       title: 'Houseboat Booking',
       category: 'UI/UX Design',
       description: 'The Houseboat Booking UI Design Template is built for speed and flexibility. Tweak colors, components, and layouts in seconds to match your brand, then launch a seamless reservation flow-from date picking. Ship faster, iterate easier, and give your guests a delightful booking experience.',
-      image: 'projectimages/HSBooking.jpg',
+      image: '/projectimages/HSBooking.jpg',
       techs: [
         { name: 'Figma', icon: '/images/skills/figma.png' },
         { name: 'Photoshop', icon: '/images/skills/photoshop.png' }
@@ -43,7 +43,7 @@ export default function Projects() {
       title: 'Nexus-E Learning',
       category: 'UI/UX Design',
       description: 'A comprehensive e-learning platform designed to provide an intuitive and engaging educational experience. Features modern UI/UX design with focus on user accessibility and learning efficiency.',
-      image: 'projectimages/Nexus-ELearning.png',
+      image: '/projectimages/Nexus-ELearning.png',
       techs: [
         { name: 'Figma', icon: '/images/skills/figma.png' },
         { name: 'Photoshop', icon: '/images/skills/photoshop.png' }
@@ -56,7 +56,7 @@ export default function Projects() {
       title: 'Sales Forecasting System',
       category: 'Full Stack',
       description: 'Developed a sales forecasting system using machine learning algorithms to predict future sales trends based on historical data.',
-      image: 'projectimages/SF.jpg',
+      image: '/projectimages/SF.jpg',
       techs: [
         { name: 'Next.js', icon: '/images/skills/next.png' },
         { name: 'Python', icon: '/images/skills/python.png' },
@@ -83,7 +83,7 @@ export default function Projects() {
         <div className="max-w-6xl mx-auto">
           <div className="bg-[#1a1d2e] rounded-2xl py-1 sm:py-2 ">
             <h2
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-[#c4ff00] text-center leading-none tracking-normal sm:tracking-wide md:tracking-wider"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-[#c4ff00] text-center leading-none tracking-wider sm:tracking-wider md:tracking-wider"
               style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
               PROJECTS
@@ -93,9 +93,9 @@ export default function Projects() {
       </section>
 
       {/* Projects Grid */}
-      <section className="px-4 sm:px-6 pb-0 sm:pb-0">
+      <section className="px-4 sm:px-6 pb-8 sm:pb-12">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {filteredProjects.map((project) => {
               const ProjectWrapper = project.dribbbleLink ? 'a' : Link;
               const wrapperProps = project.dribbbleLink 
@@ -105,10 +105,10 @@ export default function Projects() {
               return (
                 <ProjectWrapper key={project.id} {...wrapperProps} className="group block">
                   <div className={`bg-[#1a1d2e] rounded-xl sm:rounded-2xl overflow-hidden border-2 sm:border-4 ${project.borderColor} hover:scale-105 transition-transform`}>
-                    <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden">
-                      <img src={project.image} alt={project.title} 
-                           className="w-full h-full object-cover opacity-80" />
-                    </div>
+                  <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden">
+                    <img src={project.image} alt={project.title} 
+                         className="w-full h-full object-contain bg-white" />
+                  </div>
                     <div className="p-4 sm:p-6">
                       <h3 className="text-xl sm:text-2xl font-bold mb-2">{project.title}</h3>
                       <p className="text-xs sm:text-sm text-gray-400 mb-3">{project.category}</p>

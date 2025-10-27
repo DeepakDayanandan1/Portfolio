@@ -14,7 +14,7 @@ export default function About() {
     { name: 'Tailwind', img: '/images/skills/tailwind.png', icon: '🌊', color: 'text-cyan-500' },
     { name: 'C', img: '/images/skills/c.png', icon: '⚡', color: 'text-blue-400' },
     { name: 'Python', img: '/images/skills/python.png', icon: '🐍', color: 'text-yellow-400' },
-    { name: 'Next.js', img: '/images/skills/next.png', icon: '⚛️', color: 'text-cyan-400' },
+    { name: 'Next', img: '/images/skills/next.png', icon: '⚛️', color: 'text-cyan-400' },
   ];
 
   return (
@@ -26,7 +26,7 @@ export default function About() {
         <div className="max-w-6xl mx-auto">
           <div className="bg-[#1a1d2e] rounded-2xl py-1 sm:py-2 ">
             <h2
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-[#c4ff00] text-center leading-none tracking-normal sm:tracking-wide md:tracking-wider"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-[#c4ff00] text-center leading-none tracking-wider sm:tracking-wider md:tracking-wider"
               style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
               ABOUT
@@ -35,14 +35,13 @@ export default function About() {
         </div>
       </section>
 
-
       {/* Main Content Section - Image + Bio as one card */}
       <section className="px-4 sm:px-6 pb-2 sm:pb-4">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-[#1a1d2e] rounded-2xl sm:rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center gap-6 sm:gap-12">
+          <div className="bg-[#1a1d2e] rounded-2xl sm:rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center gap-6 sm:gap-12">
             
             {/* Profile Image */}
-            <div className="flex-shrink-0 w-100 sm:w-125">
+            <div className="flex-shrink-0 w-full sm:w-80 md:w-96 mb-6 md:mb-0">
               <div className="rounded-2xl sm:rounded-3xl overflow-hidden border-2 sm:border-4 border-gray-700">
                 <img 
                   src="/images/profile.jpg"
@@ -54,7 +53,7 @@ export default function About() {
 
             {/* Bio Section */}
             <div className="flex-1 flex flex-col justify-between">
-              <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-justify">  
+            <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-justify">  
                 I am a Computer Science Engineering student at 
                 <span className="text-[#c4ff00]"> Carmel College of Engineering and Technology (KTU)</span> with a deep passion for <span className="text-[#c4ff00]"> UI/UX design </span> 
                  and creating meaningful digital experiences. I focus on crafting  <span className="text-[#c4ff00]"> intuitive, accessible, and visually engaging interfaces</span> that merge creativity with usability. My design process emphasizes 
@@ -111,13 +110,13 @@ export default function About() {
       </section>
 
       {/* Skills + Connect Section */}
-      <section className="px-4 sm:px-6 pb-0 sm:pb-0">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-4">
+      <section className="px-4 sm:px-6 pb-8 sm:pb-12">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           
           {/* Skills Card */}
           <div className="bg-[#1a1d2e] rounded-2xl sm:rounded-2xl p-4 sm:p-6 flex flex-col items-center">
             <h2 className="text-3xl sm:text-4xl font-semibold mb-6 text-[#c4ff00]">Skills</h2>
-            <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
               {skills.map((skill, index) => (
                 <div key={index} className="flex flex-col items-center gap-2">
                   <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#10121a] rounded-xl flex items-center justify-center hover:scale-110 transition-transform">
@@ -138,7 +137,7 @@ export default function About() {
           {/* Connect Card */}
           <div className="bg-[#1a1d2e] rounded-2xl sm:rounded-2xl p-6 sm:p-8 flex flex-col items-center justify-center gap-6">
             <h2 className="text-3xl sm:text-4xl font-semibold text-[#c4ff00]">Let's Connect</h2>
-            <div className="flex gap-6 sm:gap-8">
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
               <a href="https://www.instagram.com/deep.4k__?igsh=N3VoMjF5aGRyaTZ0&utm_source=qr" className="text-[#c4ff00] hover:text-white transition-colors"><Instagram size={32} /></a>
               <a href="https://dribbble.com/deepak-dayanandan" className="text-[#c4ff00] hover:text-white transition-colors"><Dribbble size={32} /></a>
               <a href="https://linkedin.com/in/deepak-dayanandan" className="text-[#c4ff00] hover:text-white transition-colors"><LinkedinIcon size={32} /></a>

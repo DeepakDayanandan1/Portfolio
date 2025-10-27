@@ -16,7 +16,7 @@ export default function ProjectDetail() {
       title: 'Portfolio',
       category: 'Frontend',
       description: 'This project is a fully responsive portfolio website developed using Next.js, Tailwind CSS, and TypeScript. It serves as a personal showcase of my skills, projects, and creative work, featuring a modern UI, smooth animations, and intuitive navigation. The website is designed with a focus on performance, accessibility, and user experience, allowing visitors to seamlessly explore projects, view details, and download my resume.',
-      image: 'projectimages/Portfol.png',
+      image: '/projectimages/Portfol.png',
       techs: [
         { name: 'Next.js', icon: '/images/skills/next.png' },
         { name: 'Tailwind CSS', icon: '/images/skills/tailwind.png' },
@@ -41,7 +41,7 @@ export default function ProjectDetail() {
       title: 'Houseboat Booking',
       category: 'UI/UX Design',
       description: 'The Houseboat Booking UI Design Template is built for speed and flexibility. Tweak colors, components, and layouts in seconds to match your brand, then launch a seamless reservation flow-from date picking. Ship faster, iterate easier, and give your guests a delightful booking experience.',
-      image: 'projectimages/HSBooking.jpg',
+      image: '/projectimages/HSBooking.jpg',
       techs: [
         { name: 'Figma', icon: '/images/skills/figma.png' },
         { name: 'Photoshop', icon: '/images/skills/photoshop.png' }
@@ -56,13 +56,14 @@ export default function ProjectDetail() {
           description: 'Intuitive booking flow with date picking, guest selection, and payment integration for a smooth user experience.'
         }
       ],
+      borderColor: 'border-green-500',
       dribbbleLink: 'https://dribbble.com/shots/26477293-HouseBoat-Booking-Web-Application'
     },
     '3': {
       title: 'Nexus-The Learning Platform',
       category: 'UI/UX Design',
       description: 'A comprehensive learning platform designed to provide an intuitive and engaging educational experience. Features modern UI/UX design with focus on user accessibility and learning efficiency.',
-      image: 'projectimages/Nexus.png',
+      image: '/projectimages/Nexus-ELearning.png',
       techs: [
         { name: 'Figma', icon: '/images/skills/figma.png' },
         { name: 'Photoshop', icon: '/images/skills/photoshop.png' }
@@ -77,13 +78,14 @@ export default function ProjectDetail() {
           description: 'Focused on accessibility and user experience to ensure effective learning outcomes.'
         }
       ],
+      borderColor: 'border-blue-500',
       dribbbleLink: 'https://dribbble.com/shots/26471587-Nexus-The-Learning-Platform'
     },
     '4': {
       title: 'Sales Forecasting System',
       category: 'Full Stack',
       description: 'Developed a sales forecasting system using machine learning algorithms to predict future sales trends based on historical data.',
-      image: 'projectimages/SF.jpg',
+      image: '/projectimages/SF.jpg',
       techs: [
         { name: 'Next.js', icon: '/images/skills/next.png' },
         { name: 'Python', icon: '/images/skills/python.png' },
@@ -103,6 +105,7 @@ export default function ProjectDetail() {
           description: 'Features a clean, data-driven dashboard for visualizing results and insights in a user-friendly layout.'
         },
       ],
+      borderColor: 'border-purple-500',
       demoLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7379503792054194176/',
       githubLink: 'https://github.com/DeepakDayanandan1/Sales-Forecasting'
     }
@@ -115,7 +118,7 @@ export default function ProjectDetail() {
       <Navigation />
       
       {/* Back Button */}
-      <section className="pt-32 pb-8 px-6">
+      <section className="pt-24 sm:pt-32 pb-4 sm:pb-8 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <button 
             onClick={() => router.back()}
@@ -128,12 +131,12 @@ export default function ProjectDetail() {
       </section>
 
       {/* Project Header */}
-      <section className="pb-12 px-6">
+      <section className="pb-8 sm:pb-12 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
             {/* Project Image */}
-            <div className="rounded-2xl overflow-hidden border-4 border-green-500">
-              <img src={project.image} alt={project.title} className="w-full h-auto" />
+            <div className={`rounded-2xl overflow-hidden border-4 ${project.borderColor || 'border-blue-500'}`}>
+              <img src={project.image} alt={project.title} className="w-full h-auto object-contain bg-white" />
             </div>
 
             {/* Project Info */}
@@ -204,12 +207,12 @@ export default function ProjectDetail() {
       </section>
 
       {/* Main Features */}
-      <section className="py-12 px-6">
+      <section className="py-8 sm:py-12 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-8 text-[#c4ff00]">Main Features</h2>
           <div className="space-y-6">
             {project.features.map((feature: any, index: number) => (
-              <div key={index} className="bg-[#1a1d2e] rounded-2xl p-8">
+              <div key={index} className="bg-[#1a1d2e] rounded-2xl p-4 sm:p-6 lg:p-8">
                 <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>
                 <p className="text-gray-300 text-lg leading-relaxed">
                   {feature.description}

@@ -18,7 +18,7 @@ export default function Home() {
       title: 'Portfolio',
       category: 'Frontend',
       description: 'Developed to showcase my expertise in UI/UX design and front-end development, this portfolio highlights my skills in Next.js, TypeScript, and Tailwind CSS through a modern, user-focused interface.',
-      image: 'projectimages/Portfol.png',
+       image: '/projectimages/Portfol.png',
       techs: [
         { name: 'Next.js', icon: '/images/skills/next.png' },
         { name: 'Tailwind CSS', icon: '/images/skills/tailwind.png' },
@@ -34,7 +34,7 @@ export default function Home() {
       title: 'Houseboat Booking',
       category: 'UI/UX Design',
       description: 'The Houseboat Booking UI Design Template is built for speed and flexibility. Tweak colors, components, and layouts in seconds to match your brand, then launch a seamless reservation flow-from date picking. Ship faster, iterate easier, and give your guests a delightful booking experience.',
-      image: 'projectimages/HSBooking.jpg',
+       image: '/projectimages/HSBooking.jpg',
       techs: [
         { name: 'Figma', icon: '/images/skills/figma.png' },
         { name: 'Photoshop', icon: '/images/skills/photoshop.png' }
@@ -47,7 +47,7 @@ export default function Home() {
       title: 'Nexus-E Learning',
       category: 'UI/UX Design',
       description: 'A comprehensive e-learning platform designed to provide an intuitive and engaging educational experience. Features modern UI/UX design with focus on user accessibility and learning efficiency.',
-      image: 'projectimages/Nexus-ELearning.png',
+       image: '/projectimages/Nexus-ELearning.png',
       techs: [
         { name: 'Figma', icon: '/images/skills/figma.png' },
         { name: 'Photoshop', icon: '/images/skills/photoshop.png' }
@@ -102,7 +102,8 @@ export default function Home() {
         {/* Main Content */}
         <div className="relative z-10 text-center max-w-4xl w-full">
           <p className="text-base sm:text-lg mb-4 md:text-l text-gray-300 font-semibold">Hey There I'm</p>
-          <h1 style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }} className="text-[60px] sm:text-[200px] md:text-[160px] lg:text-[200px] font-black leading-none text-[#c4ff00] mb-0 sm:mb-1 leading-none tracking-normal sm:tracking-wide md:tracking-wider">
+          <h1 style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }} 
+          className="text-[40px] sm:text-[80px] md:text-[120px] lg:text-[160px] xl:text-[200px] font-black leading-none text-[#c4ff00] mb-2 sm:mb-4 md:mb-6 tracking-wider sm:tracking-wider md:tracking-wider">
             DEEPAK
           </h1>
           <p className="text-base sm:text-lg md:text-l text-gray-300 mb-6 sm:mb-6 px-4 font-semibold">
@@ -129,17 +130,17 @@ export default function Home() {
       </section>
 
       {/* About Preview Section */}
-      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+      <section className="py-1 sm:py-2 md:py-3 px-1 sm:px-2">
   <div className="max-w-6xl mx-auto">
     <div className="bg-[#c4ff00] rounded-2xl sm:rounded-2xl p-6 sm:p-10 md:p-12 lg:p-16 ">
       <h2
-        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-black mb-6 sm:mb-8 text-center leading-none tracking-tight sm:tracking-normal md:tracking-wide"
+        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-black mb-2 sm:mb-4 md:mb-4 text-center leading-none tracking-wider sm:tracking-wider md:tracking-wider"
         style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }}
       >
         About
       </h2>
 
-      <p className="text-black text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8 text-justify">
+      <p className="text-black text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8 text-justify max-w-6xl mx-auto">
         {/* Add ScrambledText effect here */}
         <ScrambledText
           className="scrambled-text-demo font-console"
@@ -150,14 +151,16 @@ export default function Home() {
         >{" "}
        Hi there! I'm <span className="font-bold">Deepak Dayanandan</span>, a final-year Computer Science student and passionate UI/UX designer dedicated to crafting modern, intuitive digital experiences. Skilled in Figma, Photoshop, and design systems, I specialize in creating user-friendly interfaces that balance aesthetics with functionality — driven by usability, accessibility, and thoughtful design solutions.{" "}
         </ScrambledText>
-      </p>
+      </p>  
     
-      <Link 
-        href="/about"
-        className="inline-block bg-[#1a1d2e] text-[#c4ff00] px-6 sm:px-8 py-2.5 sm:py-3 rounded-2xl font-semibold hover:bg-black transition-colors text-sm sm:text-base ml-204 sm:ml-206 md:ml-208"
-      >
-        More...
-      </Link>
+      <div className="text-right">
+        <Link 
+          href="/about"
+          className="inline-block bg-[#1a1d2e] text-[#c4ff00] px-6 sm:px-8 py-2.5 sm:py-3 rounded-2xl font-semibold hover:bg-black transition-colors text-sm sm:text-base"
+        >
+          More...
+        </Link>
+      </div>
     </div>
   </div>
 </section>
@@ -168,7 +171,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 sm:mb-12 gap-4">
             <h2
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-none tracking-normal sm:tracking-wide md:tracking-wider text-left"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-none tracking-wider sm:tracking-wider md:tracking-wider text-left"
               style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
               Recent Projects
@@ -189,7 +192,7 @@ export default function Home() {
                 <div className={`bg-[#1a1d2e] rounded-xl sm:rounded-2xl overflow-hidden border-2 sm:border-4 ${project.borderColor} hover:scale-105 transition-transform`}>
                   <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden">
                     <img src={project.image} alt={project.title} 
-                         className="w-full h-full object-cover opacity-80" />
+                         className="w-full h-full object-contain bg-white" />
                   </div>
                   <div className="p-4 sm:p-6">
                     <h3 className="text-xl sm:text-2xl font-bold mb-2">{project.title}</h3>
