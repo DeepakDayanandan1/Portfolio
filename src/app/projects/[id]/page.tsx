@@ -16,7 +16,7 @@ export default function ProjectDetail() {
       title: 'Portfolio',
       category: 'Frontend',
       description: 'This project is a fully responsive portfolio website developed using Next.js, Tailwind CSS, and TypeScript. It serves as a personal showcase of my skills, projects, and creative work, featuring a modern UI, smooth animations, and intuitive navigation. The website is designed with a focus on performance, accessibility, and user experience, allowing visitors to seamlessly explore projects, view details, and download my resume.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80',
+      image: 'projectimages/Portfol.png',
       techs: [
         { name: 'Next.js', icon: '/images/skills/next.png' },
         { name: 'Tailwind CSS', icon: '/images/skills/tailwind.png' },
@@ -33,6 +33,7 @@ export default function ProjectDetail() {
           description: 'The website features a modern and clean user interface, providing a pleasant user experience. It uses a consistent color scheme and typography throughout the site.'
         }
       ],
+      borderColor: 'border-[#c4ff00]',  
       demoLink: '#',
       githubLink: 'https://github.com/DeepakDayanandan1/Portfolio'
     },

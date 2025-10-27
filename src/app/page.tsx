@@ -18,14 +18,14 @@ export default function Home() {
       title: 'Portfolio',
       category: 'Frontend',
       description: 'Developed to showcase my expertise in UI/UX design and front-end development, this portfolio highlights my skills in Next.js, TypeScript, and Tailwind CSS through a modern, user-focused interface.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+      image: 'projectimages/Portfol.png',
       techs: [
         { name: 'Next.js', icon: '/images/skills/next.png' },
         { name: 'Tailwind CSS', icon: '/images/skills/tailwind.png' },
         { name: 'TypeScript', icon: '/images/skills/typeScript.png' },
         { name: 'Figma', icon: '/images/skills/figma.png' }
       ],
-      borderColor: 'border-purple-500',
+      borderColor: 'border-[#c4ff00]',
       demoLink: '#',
       githubLink: 'https://github.com/DeepakDayanandan1/Portfolio'
     },
@@ -102,7 +102,7 @@ export default function Home() {
         {/* Main Content */}
         <div className="relative z-10 text-center max-w-4xl w-full">
           <p className="text-base sm:text-lg mb-4 md:text-l text-gray-300 font-semibold">Hey There I'm</p>
-          <h1 style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }} className="text-[60px] sm:text-[200px] md:text-[160px] lg:text-[200px] font-black leading-none text-[#c4ff00] mb-0 sm:mb-1 leading-none tracking-tight sm:tracking-normal md:tracking-wide">
+          <h1 style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }} className="text-[60px] sm:text-[200px] md:text-[160px] lg:text-[200px] font-black leading-none text-[#c4ff00] mb-0 sm:mb-1 leading-none tracking-normal sm:tracking-wide md:tracking-wider">
             DEEPAK
           </h1>
           <p className="text-base sm:text-lg md:text-l text-gray-300 mb-6 sm:mb-6 px-4 font-semibold">
@@ -132,9 +132,13 @@ export default function Home() {
       <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
   <div className="max-w-6xl mx-auto">
     <div className="bg-[#c4ff00] rounded-2xl sm:rounded-2xl p-6 sm:p-10 md:p-12 lg:p-16 ">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4 sm:mb-6 md:mb-8 ml-16 sm:ml-18 md:ml-20">
+      <h2
+        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-black mb-6 sm:mb-8 text-center leading-none tracking-tight sm:tracking-normal md:tracking-wide"
+        style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }}
+      >
         About
       </h2>
+
       <p className="text-black text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8 text-justify">
         {/* Add ScrambledText effect here */}
         <ScrambledText
@@ -144,17 +148,13 @@ export default function Home() {
           speed={0.5}
           scrambleChars=".:"
         >{" "}
-        Hi there! I'm <span className="font-bold">Deepak Dayanandan</span>, a final-year Computer Science student at Carmel College of Engineering and Technology with a passion for crafting user-centric experiences.
-        
-        I specialize in UI/UX design, front-end development, and graphic design, with expertise in HTML, CSS, JavaScript, React, Tailwind CSS, Python, and C.
-
-        I thrive on collaboration and bring experience in agile scrum methodologies. Beyond coding, I enjoy photography, graphic design, and exploring music. Let's connect and bring your digital visions to life.{" "}
+       Hi there! I'm <span className="font-bold">Deepak Dayanandan</span>, a final-year Computer Science student and passionate UI/UX designer dedicated to crafting modern, intuitive digital experiences. Skilled in Figma, Photoshop, and design systems, I specialize in creating user-friendly interfaces that balance aesthetics with functionality — driven by usability, accessibility, and thoughtful design solutions.{" "}
         </ScrambledText>
       </p>
-
+    
       <Link 
         href="/about"
-        className="inline-block bg-[#1a1d2e] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold hover:bg-black transition-colors text-sm sm:text-base ml-204 sm:ml-206 md:ml-208"
+        className="inline-block bg-[#1a1d2e] text-[#c4ff00] px-6 sm:px-8 py-2.5 sm:py-3 rounded-2xl font-semibold hover:bg-black transition-colors text-sm sm:text-base ml-204 sm:ml-206 md:ml-208"
       >
         More...
       </Link>
@@ -167,9 +167,17 @@ export default function Home() {
       <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 sm:mb-12 gap-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Recent Projects</h2>
-            <Link href="/projects" 
-                  className="text-[#c4ff00] hover:underline flex items-center gap-2 text-sm sm:text-base">
+            <h2
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-none tracking-normal sm:tracking-wide md:tracking-wider text-left"
+              style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }}
+            >
+              Recent Projects
+            </h2>
+
+            <Link
+              href="/projects"
+              className="text-[#c4ff00] hover:text-white transition-colors flex items-center gap-2 text-sm sm:text-base font-medium sm:mt-2"
+            >
               See all →
             </Link>
           </div>

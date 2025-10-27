@@ -72,12 +72,15 @@ export default function Gallery() {
       <Navigation />
 
       {/* Header Section */}
-      <section className="pt-16 sm:pt-20 pb-4 sm:pb-6 px-4 sm:px-6">
+      <section className="pt-16 sm:pt-20 pb-2 sm:pb-4 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-[#1a1d2e] rounded-2xl py-8 sm:py-12">
-            <h1 className="text-4xl sm:text-4xl md:text-5xl font-bold text-center">
+          <div className="bg-[#1a1d2e] rounded-2xl py-1 sm:py-2 ">
+            <h2
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-[#c4ff00] text-center leading-none tracking-normal sm:tracking-wide md:tracking-wider"
+              style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }}
+            >
               GALLERY
-            </h1>
+            </h2>
           </div>
         </div>
       </section>

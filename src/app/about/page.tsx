@@ -24,11 +24,17 @@ export default function About() {
       {/* Header Section */}
       <section className="pt-16 sm:pt-20 pb-2 sm:pb-4 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-[#1a1d2e] rounded-2xl sm:rounded-2xl py-8 sm:py-12">
-            <h1 className="text-4xl sm:text-4xl md:text-5xl font-bold text-center">ABOUT</h1>
+          <div className="bg-[#1a1d2e] rounded-2xl py-1 sm:py-2 ">
+            <h2
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-[#c4ff00] text-center leading-none tracking-normal sm:tracking-wide md:tracking-wider"
+              style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }}
+            >
+              ABOUT
+            </h2>
           </div>
         </div>
       </section>
+
 
       {/* Main Content Section - Image + Bio as one card */}
       <section className="px-4 sm:px-6 pb-2 sm:pb-4">
@@ -48,15 +54,35 @@ export default function About() {
 
             {/* Bio Section */}
             <div className="flex-1 flex flex-col justify-between">
-              <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed mb-6">
-                I am a Computer Science Engineering student at <span className="text-[#c4ff00]">Carmel College of Engineering and Technology (KTU)</span> with a strong passion for UI/UX design and front-end development. My goal is to create intuitive, accessible, and visually appealing digital experiences that balance design aesthetics with technical precision.<br/><br/>
+              <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-justify">  
+                I am a Computer Science Engineering student at 
+                <span className="text-[#c4ff00]"> Carmel College of Engineering and Technology (KTU)</span> with a deep passion for <span className="text-[#c4ff00]"> UI/UX design </span> 
+                 and creating meaningful digital experiences. I focus on crafting  <span className="text-[#c4ff00]"> intuitive, accessible, and visually engaging interfaces</span> that merge creativity with usability. My design process emphasizes 
+                 user research, interaction flow, and accessibility to ensure every experience feels natural and impactful.
+                <br/><br/>
 
-                I specialize in transforming user needs into functional interfaces using Next.js, along with a solid foundation in C and Python for backend logic and problem-solving. My approach combines creativity and analytical thinking — ensuring that every product not only looks engaging but also performs seamlessly across devices.<br/><br/>
+                Alongside design, I specialize in 
+                <span className="text-[#c4ff00]"> front-end development </span> 
+                using <span className="text-[#c4ff00]">Next.js</span> and modern frameworks to bring concepts to life 
+                with precision and performance. With a solid foundation in 
+                <span className="text-[#c4ff00]"> C</span> and <span className="text-[#c4ff00]"> Python</span>, 
+                I bridge the gap between design and development—ensuring that every product 
+                not only looks great but functions seamlessly across devices.
+                <br/><br/>
 
-                Beyond design and coding, I enjoy exploring user psychology, interaction patterns, and usability testing to refine the overall user journey. I continuously experiment with new design systems and frameworks to stay updated with evolving industry standards.<br/><br/>
-                
-                I thrive in collaborative environments that follow Agile and iterative workflows, where developers, designers, and product thinkers come together to build purposeful solutions. My goal is to contribute to impactful projects that push the boundaries of user-centered design and technology.
+                Beyond design and code, I'm passionate about exploring 
+                <span className="text-[#c4ff00]"> user psychology, interaction patterns,</span> and 
+                <span className="text-[#c4ff00]"> usability testing </span> 
+                to refine user journeys. I constantly experiment with  emerging design systems and frameworks to stay aligned with evolving industry trends.
+                <br/><br/>
+
+                I thrive in collaborative environments that follow 
+                <span className="text-[#c4ff00]"> Agile and iterative workflows</span>, 
+                where designers, developers, and product thinkers work together 
+                to build purposeful, 
+                <span className="text-[#c4ff00]"> user-centered solutions</span>.
               </p>
+
 
               <div className="flex gap-4">
                 {/* View Button */}
