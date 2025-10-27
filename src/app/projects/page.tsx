@@ -13,17 +13,17 @@ export default function Projects() {
       id: 1,
       title: 'Portfolio',
       category: 'Frontend',
-      description: 'Developed to showcase my skills in web development, my portfolio website exemplifies proficiency in technologies such as ReactJS, CSS, and',
+      description: 'Developed to showcase my expertise in UI/UX design and front-end development, this portfolio highlights my skills in Next.js, TypeScript, and Tailwind CSS through a modern, user-focused interface.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
       techs: [
-        { name: 'React', icon: '/images/skills/react.png' },
-        { name: 'JavaScript', icon: '/images/skills/c.png' },
-        { name: 'CSS', icon: '/images/skills/tailwind.png' },
+        { name: 'Next.js', icon: '/images/skills/next.png' },
+        { name: 'Tailwind CSS', icon: '/images/skills/tailwind.png' },
+        { name: 'TypeScript', icon: '/images/skills/typeScript.png' },
         { name: 'Figma', icon: '/images/skills/figma.png' }
       ],
       borderColor: 'border-purple-500',
       demoLink: '#',
-      githubLink: '#'
+      githubLink: 'https://github.com/DeepakDayanandan1/Portfolio'
     },
     {
       id: 2,
@@ -40,10 +40,10 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: 'Nexus-The Learning Platform',
+      title: 'Nexus-E Learning',
       category: 'UI/UX Design',
-      description: '',
-      image: 'projectimages/Nexus.png',
+      description: 'A comprehensive e-learning platform designed to provide an intuitive and engaging educational experience. Features modern UI/UX design with focus on user accessibility and learning efficiency.',
+      image: 'projectimages/Nexus-ELearning.png',
       techs: [
         { name: 'Figma', icon: '/images/skills/figma.png' },
         { name: 'Photoshop', icon: '/images/skills/photoshop.png' }
@@ -53,19 +53,18 @@ export default function Projects() {
     },
     {
       id: 4,
-      title: 'User Authentication System',
+      title: 'Sales Forecasting System',
       category: 'Full Stack',
-      description: 'Crafted a responsive CRED Landing Page clone using ReactJS for modularity and interactivity, styled with CSS to match the original design.',
-      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&q=80',
+      description: 'Developed a sales forecasting system using machine learning algorithms to predict future sales trends based on historical data.',
+      image: 'projectimages/SF.jpg',
       techs: [
-        { name: 'React', icon: '/images/skills/react.png' },
-        { name: 'JavaScript', icon: '/images/skills/c.png' },
-        { name: 'CSS', icon: '/images/skills/tailwind.png' },
+        { name: 'Next.js', icon: '/images/skills/next.png' },
+        { name: 'Python', icon: '/images/skills/python.png' },
         { name: 'Figma', icon: '/images/skills/figma.png' }
       ],
-      borderColor: 'border-teal-500',
-      demoLink: '#',
-      githubLink: '#'
+      borderColor: 'border-purple-500',
+      demoLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7379503792054194176/',
+      githubLink: 'https://github.com/DeepakDayanandan1/Sales-Forecasting'
     }
   ];
 

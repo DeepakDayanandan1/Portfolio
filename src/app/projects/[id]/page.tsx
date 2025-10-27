@@ -1,5 +1,6 @@
 "use client";
 
+
 import { useParams, useRouter } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -14,12 +15,12 @@ export default function ProjectDetail() {
     '1': {
       title: 'Portfolio',
       category: 'Frontend',
-      description: 'This project is a portfolio website developed using React.js. The website is designed to showcase the user\'s skills, projects, and services. It features a modern and clean design with smooth navigation and responsive layout.',
+      description: 'This project is a fully responsive portfolio website developed using Next.js, Tailwind CSS, and TypeScript. It serves as a personal showcase of my skills, projects, and creative work, featuring a modern UI, smooth animations, and intuitive navigation. The website is designed with a focus on performance, accessibility, and user experience, allowing visitors to seamlessly explore projects, view details, and download my resume.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80',
       techs: [
-        { name: 'React', icon: '/images/skills/react.png' },
-        { name: 'JavaScript', icon: '/images/skills/c.png' },
-        { name: 'CSS', icon: '/images/skills/tailwind.png' },
+        { name: 'Next.js', icon: '/images/skills/next.png' },
+        { name: 'Tailwind CSS', icon: '/images/skills/tailwind.png' },
+        { name: 'TypeScript', icon: '/images/skills/typescript.png' },
         { name: 'Figma', icon: '/images/skills/figma.png' }
       ],
       features: [
@@ -33,7 +34,7 @@ export default function ProjectDetail() {
         }
       ],
       demoLink: '#',
-      githubLink: '#'
+      githubLink: 'https://github.com/DeepakDayanandan1/Portfolio'
     },
     '2': {
       title: 'Houseboat Booking',
@@ -76,6 +77,33 @@ export default function ProjectDetail() {
         }
       ],
       dribbbleLink: 'https://dribbble.com/shots/26471587-Nexus-The-Learning-Platform'
+    },
+    '4': {
+      title: 'Sales Forecasting System',
+      category: 'Full Stack',
+      description: 'Developed a sales forecasting system using machine learning algorithms to predict future sales trends based on historical data.',
+      image: 'projectimages/SF.jpg',
+      techs: [
+        { name: 'Next.js', icon: '/images/skills/next.png' },
+        { name: 'Python', icon: '/images/skills/python.png' },
+        { name: 'Figma', icon: '/images/skills/figma.png' }
+      ],
+      features: [
+        {
+          title: 'ML-Powered Sales Prediction:',
+          description: 'Utilizes machine learning algorithms to forecast future sales trends with precision and reliability.'
+        },
+        {
+          title: 'Confidence & Accuracy Metrics:',
+          description: 'Provides detailed confidence levels and accuracy insights to help evaluate prediction performance.'
+        },
+        {
+          title: 'Modern Dashboard Interface:',
+          description: 'Features a clean, data-driven dashboard for visualizing results and insights in a user-friendly layout.'
+        },
+      ],
+      demoLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7379503792054194176/',
+      githubLink: 'https://github.com/DeepakDayanandan1/Sales-Forecasting'
     }
   };
 

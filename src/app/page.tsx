@@ -17,28 +17,43 @@ export default function Home() {
       id: 1,
       title: 'Portfolio',
       category: 'Frontend',
-      description: 'Developed to showcase my skills in web development, my portfolio website exemplifies proficiency in technologies such as ReactJS, CSS, and',
+      description: 'Developed to showcase my expertise in UI/UX design and front-end development, this portfolio highlights my skills in Next.js, TypeScript, and Tailwind CSS through a modern, user-focused interface.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
-      techs: ['React', 'JavaScript', 'CSS', 'Figma'],
-      borderColor: 'border-green-500'
+      techs: [
+        { name: 'Next.js', icon: '/images/skills/next.png' },
+        { name: 'Tailwind CSS', icon: '/images/skills/tailwind.png' },
+        { name: 'TypeScript', icon: '/images/skills/typeScript.png' },
+        { name: 'Figma', icon: '/images/skills/figma.png' }
+      ],
+      borderColor: 'border-purple-500',
+      demoLink: '#',
+      githubLink: 'https://github.com/DeepakDayanandan1/Portfolio'
     },
     {
       id: 2,
-      title: 'Weather App',
-      category: 'Full Stack',
-      description: 'Developed a full-stack weather app using NodeJS/ Express for server-side logic and ReactJS/Handlebars for interactive frontend, delivering real-time weather data',
-      image: 'https://images.unsplash.com/photo-1561484930-998b6a7b22e8?w=800&q=80',
-      techs: ['React', 'JavaScript', 'CSS', 'Figma'],
-      borderColor: 'border-blue-500'
+      title: 'Houseboat Booking',
+      category: 'UI/UX Design',
+      description: 'The Houseboat Booking UI Design Template is built for speed and flexibility. Tweak colors, components, and layouts in seconds to match your brand, then launch a seamless reservation flow-from date picking. Ship faster, iterate easier, and give your guests a delightful booking experience.',
+      image: 'projectimages/HSBooking.jpg',
+      techs: [
+        { name: 'Figma', icon: '/images/skills/figma.png' },
+        { name: 'Photoshop', icon: '/images/skills/photoshop.png' }
+      ],
+      borderColor: 'border-green-500',
+      dribbbleLink: 'https://dribbble.com/shots/26477293-HouseBoat-Booking-Web-Application'
     },
     {
       id: 3,
-      title: 'Cred Clone',
-      category: 'Frontend',
-      description: 'Crafted a responsive CRED Landing Page clone using ReactJS for modularity and interactivity, styled with CSS to match the original design.',
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80',
-      techs: ['React', 'JavaScript', 'CSS', 'Figma'],
-      borderColor: 'border-purple-500'
+      title: 'Nexus-E Learning',
+      category: 'UI/UX Design',
+      description: 'A comprehensive e-learning platform designed to provide an intuitive and engaging educational experience. Features modern UI/UX design with focus on user accessibility and learning efficiency.',
+      image: 'projectimages/Nexus-ELearning.png',
+      techs: [
+        { name: 'Figma', icon: '/images/skills/figma.png' },
+        { name: 'Photoshop', icon: '/images/skills/photoshop.png' }
+      ],
+      borderColor: 'border-blue-500',
+      dribbbleLink: 'https://dribbble.com/shots/26471587-Nexus-The-Learning-Platform'
     }
   ];
 
@@ -175,11 +190,15 @@ export default function Home() {
                       {project.description}
                     </p>
                     <div className="flex gap-2 flex-wrap">
-                      {project.techs.map((tech, index) => (
-                        <div key={index} className="w-8 h-8 sm:w-10 sm:h-10 bg-gray-800 rounded-lg flex items-center justify-center">
-                          <span className="text-xs">{tech[0]}</span>
-                        </div>
-                      ))}
+                      {project.techs.map((tech, index) => {
+                        const src = typeof tech === "string" ? `/images/skills/${tech}.png` : tech.icon;
+                        const alt = typeof tech === "string" ? tech : tech.name;
+                        return (
+                           <div key={index} className="w-8 h-8 sm:w-10 sm:h-10 bg-gray-800 rounded-lg flex items-center justify-center p-1">
+                            <img src={src} alt={alt} className="w-full h-full object-contain" />
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
