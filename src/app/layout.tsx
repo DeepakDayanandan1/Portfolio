@@ -11,7 +11,7 @@ export const metadata = {
   description:
     "Deepak.Designs - A portfolio by Deepak Dayanandan, UI/UX Designer and Front-End Developer creating modern, user-focused web experiences.",
   icons: {
-    icon: "/logo.png",
+    icon: "/logo001.png",
   },  
 };
 

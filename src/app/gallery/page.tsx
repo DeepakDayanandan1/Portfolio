@@ -76,7 +76,7 @@ export default function Gallery() {
         <div className="max-w-6xl mx-auto">
           <div className="bg-[#1a1d2e] rounded-2xl py-1 sm:py-2 ">
             <h2
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-[#c4ff00] text-center leading-none tracking-normal sm:tracking-wide md:tracking-wider"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-[#c4ff00] text-center leading-none tracking-wider sm:tracking-wider md:tracking-wider"
               style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
               GALLERY
