@@ -13,6 +13,23 @@ export const metadata = {
   icons: {
     icon: "/logo001.png",
   },  
+    openGraph: {
+    title: "Deepak.Designs",
+    description:
+      "A portfolio by Deepak Dayanandan — UI/UX Designer & Front-End Developer crafting modern experiences.",
+    url: "https://deepakdesigns.vercel.app",
+    siteName: "Deepak.Designs",
+    images: [
+      {
+        url: "/Slice2.png", // 🖼️ Replace this with your new image file
+        width: 1200,
+        height: 630,
+        alt: "Deepak.Designs Portfolio Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
