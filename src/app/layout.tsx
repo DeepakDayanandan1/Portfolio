@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "Deepak.Designs",
     images: [
       {
-        url: "/Slice5.png", // 🖼️ Replace this with your new image file
+        url: "/slice5.png", // 🖼️ Replace this with your new image file
         width: 1200,
         height: 630,
         alt: "Deepak.Designs Portfolio Preview",
