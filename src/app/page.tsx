@@ -101,12 +101,12 @@ export default function Home() {
         
         {/* Main Content */}
         <div className="relative z-10 text-center max-w-4xl w-full">
-          <p className="text-base sm:text-lg mb-4 md:text-l text-gray-300 font-semibold">Hey There I'm</p>
+          <p className="text-base sm:text-lg mb-4 md:text-l text-gray-300 font-medium">Hey There I'm</p>
           <h1 style={{ fontFamily: 'Humane, -apple-system, BlinkMacSystemFont, sans-serif' }} 
           className="text-[40px] sm:text-[80px] md:text-[120px] lg:text-[160px] xl:text-[200px] font-black leading-none text-[#c4ff00] mb-2 sm:mb-4 md:mb-6 tracking-wider sm:tracking-wider md:tracking-wider">
             DEEPAK
           </h1>
-          <p className="text-base sm:text-lg md:text-l text-gray-300 mb-6 sm:mb-6 px-4 font-semibold">
+          <p className="text-base sm:text-lg md:text-l text-gray-300 mb-6 sm:mb-6 px-4 font-medium">
             Currently Studying Computer Science<br className="hidden sm:block" />
             <span className="sm:hidden"> </span>and Engineering
           </p>

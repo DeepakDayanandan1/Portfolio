@@ -41,7 +41,7 @@ export default function Navigation() {
               href="/gallery" 
               className="text-white hover:text-[#c4ff00] transition-colors"
             >
-              Gallery
+              Posters
             </Link>
           </li>
           <li>
@@ -57,7 +57,11 @@ export default function Navigation() {
         {/* Mobile Navigation */}
         <div className="md:hidden flex items-center justify-between">
           <Link href="/" className="text-[#c4ff00] font-bold text-xl">
-            Portfolio
+            <img
+              src="/logo001.png"
+              alt="Deepak.Designs Portfolio Preview"
+              className="h-8 w-auto" // adjust size as needed
+            />
           </Link>
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -104,7 +108,7 @@ export default function Navigation() {
                   onClick={() => setIsOpen(false)}
                   className="block text-white hover:text-[#c4ff00] transition-colors"
                 >
-                  Gallery
+                  Posters
                 </Link>
               </li>
               <li>
