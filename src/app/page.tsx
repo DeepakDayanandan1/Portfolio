@@ -64,39 +64,39 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 pt-20">
         {/* Infinite Background Text Marquee with ScrollVelocity */}
-<div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5 space-y-4">
-  {/* Line 1 - scroll left */}
-  <ScrollVelocity
-    texts={['DESIGNER UI DESIGNER UI DESIGNER  DESIGNER UI DESIGNER UI DESIGNER']} 
-    velocity={50} 
-    loop={true}       // loop infinitely
-    className="text-[80px] sm:text-[120px] lg:text-[200px] font-bold leading-none whitespace-nowrap"
-  />
+        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5 space-y-4">
+          {/* Line 1 - scroll left */}
+          <ScrollVelocity
+            texts={['DESIGNER UI DESIGNER UI DESIGNER  DESIGNER UI DESIGNER UI DESIGNER']} 
+            velocity={50} 
+            loop={true}       // loop infinitely
+            className="text-[200px] sm:text-[120px] lg:text-[200px] font-bold leading-none whitespace-nowrap"
+          />
 
-  {/* Line 2 - scroll right */}
-  <ScrollVelocity
-    texts={['UX DEVELOPER FRONTEND DEVELOPER  UX DEVELOPER FRONTEND DEVELOPER']} 
-    velocity={-60} 
-    loop={true}
-    className="text-[80px] sm:text-[120px] lg:text-[200px] font-bold leading-none whitespace-nowrap"
-  />
+          {/* Line 2 - scroll right */}
+          <ScrollVelocity
+            texts={['UX DEVELOPER FRONTEND DEVELOPER  UX DEVELOPER FRONTEND DEVELOPER']} 
+            velocity={-60} 
+            loop={true}
+            className="text-[200px] sm:text-[120px] lg:text-[200px] font-bold leading-none whitespace-nowrap"
+          />
 
-  {/* Line 3 - scroll left */}
-  <ScrollVelocity
-    texts={['DESIGNER UI DESIGNER UI DESIGNER  DESIGNER UI DESIGNER UI DESIGNER']} 
-    velocity={40} 
-    loop={true}
-    className="text-[80px] sm:text-[120px] lg:text-[200px] font-bold leading-none whitespace-nowrap"
-  />
+          {/* Line 3 - scroll left */}
+          <ScrollVelocity
+            texts={['DESIGNER UI DESIGNER UI DESIGNER  DESIGNER UI DESIGNER UI DESIGNER']} 
+            velocity={40} 
+            loop={true}
+            className="text-[200px] sm:text-[120px] lg:text-[200px] font-bold leading-none whitespace-nowrap"
+          />
 
-  {/* Line 4 - scroll right */}
-  <ScrollVelocity
-    texts={['UX DEVELOPER FRONTEND DEVELOPER  UX DEVELOPER FRONTEND DEVELOPER']} 
-    velocity={-45} 
-    loop={true}
-    className="text-[80px] sm:text-[120px] lg:text-[200px] font-bold leading-none whitespace-nowrap"
-  />
-</div>
+          {/* Line 4 - scroll right */}
+          <ScrollVelocity
+            texts={['UX DEVELOPER FRONTEND DEVELOPER  UX DEVELOPER FRONTEND DEVELOPER']} 
+            velocity={-45} 
+            loop={true}
+            className="text-[200px] sm:text-[120px] lg:text-[200px] font-bold leading-none whitespace-nowrap"
+          />
+        </div>
 
         
         {/* Main Content */}
