@@ -64,7 +64,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 pt-20">
         {/* Infinite Background Text Marquee with ScrollVelocity */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5 space-y-4">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-6 space-y-4">
           {/* Line 1 - scroll left */}
           <ScrollVelocity
             texts={['DESIGNER UI DESIGNER UI DESIGNER  DESIGNER UI DESIGNER UI DESIGNER']} 
